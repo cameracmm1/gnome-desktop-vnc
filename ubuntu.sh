@@ -21,11 +21,11 @@ echo -e "$PASS\\n$PASS" | vncserver :$PORT
 
 cd /root/.vnc/
 mv xstartup xstartup.bak
-wget https://raw.githubusercontent.com/hhsungur/gnome-desktop-autoinstall/master/xstartup --no-check-certificate
+wget https://raw.githubusercontent.com/cameracmm1/gnome-desktop-vnc/master/xstartup --no-check-certificate
 chmod +x xstartup
 
 cd /etc/init.d/
-wget https://raw.githubusercontent.com/hhsungur/gnome-desktop-autoinstall/master/vncserver --no-check-certificate
+wget https://raw.githubusercontent.com/cameracmm1/gnome-desktop-vnc/master/vncserver --no-check-certificate
 chmod +x vncserver
 
 mkdir -p /etc/vncserver
